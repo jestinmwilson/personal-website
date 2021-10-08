@@ -1,0 +1,33 @@
+	{% url 'about-me' as about_me %}
+	{% url 'resume' as resume %}
+	{% url 'contact-me' as contact_me %}
+	{% url 'blog:post_list' as post_list%}
+	
+	<div class="nav-wrap">
+		<ul class="nav">
+		{% if request.path == about_me %}
+			<li class="nav__item"><a class="active" href="{{ about_me }}">About Me</a></li>
+			{% else %}
+			<li class="nav__item"><a href="{{ about_me }}">About Me</a></li>
+		{% endif %}
+
+		{% if request.path == resume %}
+			<li class="nav__item"><a class="active" href="{{ resume }}">CV</a></li>
+			{% else %}
+			<li class="nav__item"><a href="{{ resume }}">CV</a></li>
+		{% endif %}
+
+		{% if '/blog/' in request.path %}
+			<li class="nav__item"><a class="active" href="{{ post_list }}">weblog</a></li>
+			{% else %}
+			<li class="nav__item"><a href="{{ post_list }}">weblog</a></li>
+		{% endif %}
+		
+		{% if request.path == contact_me %}
+			<li class="nav__item"><a class="active" href="{{ contact_me }}">Contact Me</a></li>
+			{% else %}
+			<li class="nav__item"><a href="{{ contact_me }}">Contact Me</a></li>
+		{% endif %}
+
+		</ul>
+	</div>

@@ -1,0 +1,223 @@
+		{% extends 'shared/_MainLayout.html' %}
+		{% load static %}
+
+		{% block content %}
+
+		<div class="content js-scroll">
+			<!-- About -->
+			<div class="section mt-0">
+				<h1 class="title title--h1 title__separate">about me</h1>
+				<div class="mb-0">
+					<p>Recent software engineering graduate with fundamentals of software design, development and testing Seeking to utilize broad educational background with excellent analytical,  technical and programming skills to thrive as an entry-level software engineer. Application development in Java , Python with backend database such as MYSQL, Oracle etc </p>
+					<p class="mb-0">A python developer with excellent time management skills and a can-do attitude Inclined  towards  the field of data science and  interested to work in that field of science</p>
+				</div>
+			</div>
+
+			<!-- What -->
+			<div class="section">
+				<h2 class="title title--h2">What I do</h2>
+				<div class="row">
+					<!-- Case Item -->
+					<div class="col-12 col-lg-6 case-item-wrap">
+						<div class="case-item">
+							{% comment %} <img class="case-item__icon" src="http://netgon.net/artstyles/v-card2/assets/icons/icon-design.svg" alt=""> {% endcomment %}
+						<a class="social__link" href="https://www.linkedin.com/in/jestin-m-wilson/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							
+							<h3 class="title title--h3">create apps & websites</h3>
+							<p class="case-item__caption">The most modern high quality apps and websites made at a professional level. </p>
+						</div>
+					</div>
+
+					<!-- Case Item -->
+					<div class="col-12 col-lg-6 case-item-wrap">
+						<div class="case-item">
+							<img class="case-item__icon" src="http://netgon.net/artstyles/v-card2/assets/icons/icon-dev.svg" alt="">
+							<h3 class="title title--h3">Web Development</h3>
+							<p class="case-item__caption">Development of high quality sites at a professional level.</p>
+						</div>
+					</div>
+
+					<!-- Case Item -->
+					<div class="col-12 col-lg-6 case-item-wrap">
+						<div class="case-item">
+							<img class="case-item__icon" src="http://netgon.net/artstyles/v-card2/assets/icons/icon-app.svg" alt="">
+							<h3 class="title title--h3">Mobile applications</h3>
+							<p class="case-item__caption">Professional development of iOS and Android apps using Kivy and PyMob.</p>
+						</div>
+					</div>
+
+					<!-- Case Item -->
+					<div class="col-12 col-lg-6 case-item-wrap">
+						<div class="case-item">
+							<img class="case-item__icon" src="http://netgon.net/artstyles/v-card2/assets/icons/icon-photo.svg" alt="">
+							<h3 class="title title--h3">Photography</h3>
+							<p class="case-item__caption">I make high quality photos and edits on a professional level.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonials -->
+			<div class="section">
+				<h2 class="title title--h2">Customers say</h2>
+				<div class="swiper-container js-carousel-review">
+					<div class="swiper-wrapper">
+						<!-- Item review -->
+						<div class="swiper-slide review-item">
+							{% comment %} <svg class="avatar avatar--80" viewBox="0 0 84 84">
+								<g class="avatar__hexagon">
+									<image xlink:href="{% static 'img/avatar-2.jpg"' %} height="100%" width="100%"></image>
+								</g>
+							</svg> {% endcomment %}
+							<h4 class="title title--h3">Daniel Lewis</h4>
+							<p class="review-item__caption">"His flexibility makes it possible to increase and decrease his involvement based on our needs."</p>
+						</div>
+
+						<!-- Item review -->
+						<div class="swiper-slide review-item">
+							<svg class="avatar avatar--80" viewBox="0 0 84 84">
+								<g class="avatar__hexagon">
+									<image xlink:href="{% static 'img/avatar-3.jpg' %}" height="100%" width="100%"></image>
+								</g>
+							</svg>
+							<h4 class="title title--h3">Jessica Miller</h4>
+							<p class="review-item__caption">"His knowledge of the type of task and the final result of the product was most impressive."</p>
+						</div>
+
+						<!-- Item review -->
+						<div class="swiper-slide review-item">
+							<svg class="avatar avatar--80" viewBox="0 0 84 84">
+								<g class="avatar__hexagon">
+									<image xlink:href="{% static 'img/avatar-4.jpg' %}" height="100%" width="100%"></image>
+								</g>
+							</svg>
+							<h4 class="title title--h3">Tanya </h4>
+							<p class="review-item__caption">"He offer super competitive rates while delivering fully-functioning programs on impressive timelines."</p>
+						</div>
+
+						<!-- Item review -->
+						<div class="swiper-slide review-item">
+							<svg class="avatar avatar--80" viewBox="0 0 84 84">
+								<g class="avatar__hexagon">
+									<image xlink:href="{% static 'img/avatar-5.jpg' %}" height="100%" width="100%"></image>
+								</g>
+							</svg>
+							<h4 class="title title--h3">Thomas Castro</h4>
+							<p class="review-item__caption">"He knows what he doing, he do his best, and he is super friendly, reliable, communicative."</p>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<!-- Clients -->
+			<div class="section">
+				<h2 class="title title--h2">Customer</h2>
+				<div class="swiper-container js-carousel-clients">
+					<div class="swiper-wrapper">
+						<!-- Item client -->
+						<div class="swiper-slide">
+							<a href="#"><img src="{% static 'img/download.jpg' %}" alt="logo"></a>
+						</div>
+
+						<!-- Item client -->
+						<div class="swiper-slide">
+							<a href="#"><img src="{% static 'img/download.jpg' %}" alt="logo"></a>
+						</div>
+
+						<!-- Item client -->
+						<div class="swiper-slide">
+							<a href="#"><img src="{% static 'img/download.jpg' %}" alt="logo"></a>
+						</div>
+
+						<!-- Item client -->
+						<div class="swiper-slide">
+							<a href="#"><img src="{% static 'img/download.jpg' %}" alt="logo"></a>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<!-- Carousel wrapper -->
+<div
+  id="carouselBasicExample"
+  class="carousel slide carousel-fade"
+  data-mdb-ride="carousel"
+>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"></li>
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"></li>
+    <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"></li>
+  </ol>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sunset</h5>
+        <p>photo taken by canon camera</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Stars</h5>
+        <p>photo taken by canon camera</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Beach</h5>
+        <p>photo taken by canon camera</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <a
+    class="carousel-control-prev"
+    href="#carouselBasicExample"
+    role="button"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselBasicExample"
+    role="button"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<!-- Carousel wrapper -->
+		</div>
+		
+		{% endblock content %}

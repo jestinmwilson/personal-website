@@ -1,0 +1,57 @@
+{% extends 'shared/_MainLayout.html' %}
+
+{% block content %}
+
+<!-- Content -->
+		<div class="content js-scroll">
+			<div class="section mt-0">
+				<h1 class="title title--h1 title__separate">Contact Me</h1>
+			</div>
+			<h2 class="title title--h2">Contact Form</h2>
+			
+			<div class="col-md-12">
+				{% if messages %}
+					{% for message in messages %}
+						<div class="alert alert-{{ message.tags }}">
+							{{ message }}
+						</div>
+					{% endfor %}
+				{% endif %}
+			</div>
+
+			<form method="post" data-toggle="validator">
+				{% csrf_token %}
+				<div class="row">
+					<div class="form-group col-12 col-md-6">
+						<i class="font-icon icon-user"></i>
+						{{ form.fullname }}
+						{% comment %} <input type="text" class="input input__icon form-control" id="nameContact" name="nameContact" placeholder="first name and last name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the desired field')" onkeyup="setCustomValidity('')"> {% endcomment %}
+						<div class="help-block with-errors"></div>
+						{% for error in form.fullname.errors %}
+							<p class="text-danger "> {{ error }} </p>
+						{% endfor %}
+					</div>
+					<div class="form-group col-12 col-md-6">
+						<i class="font-icon icon-at"></i>
+						{{ form.email }}
+						{% comment %} <input type="email" class="input input__icon form-control" id="emailContact" name="emailContact" placeholder="Email address" required="required" autocomplete="on" oninvalid="setCustomValidity('Enter the desired email')" onkeyup="setCustomValidity('')"> {% endcomment %}
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group col-12 col-md-12">
+					{{ form.message }}
+						{% comment %} <textarea class="textarea form-control" id="messageContact" name="messageContact" placeholder="Your message" rows="7" required="required" oninvalid="setCustomValidity('Fill in the desired field')" onkeyup="setCustomValidity('')"></textarea> {% endcomment %}
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
+						<div id="validator-contact" class="hidden"></div>
+					</div>
+					<div class="col-12 col-md-6 order-1 order-md-2 text-left">
+						<button type="submit" class="btn"><i class="font-icon icon-send"></i> send Message </button>
+					</div>
+				</div>
+			</form>
+		</div><!-- Content End --
+
+{% endblock content %}
