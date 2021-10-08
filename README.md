@@ -1,4 +1,20 @@
 # personal-website
+
+
+![web1](https://user-images.githubusercontent.com/80836634/136540321-0755db5b-7fb4-48b3-a613-4a3ed0abfa13.png)
+
+
+
+![web2](https://user-images.githubusercontent.com/80836634/136540378-5d4f5088-e1d2-46f0-b56e-3223ecf02a10.png)
+
+
+![web6](https://user-images.githubusercontent.com/80836634/136540445-c98f115f-eb3f-49d9-bc6e-05984f4a8f9c.png)
+
+
+![web4](https://user-images.githubusercontent.com/80836634/136540492-2022e548-8c89-445d-94d4-affab65b4f7e.png)
+
+
+
 How to run this project :
 
 1- Download/clone the entire project and open it in IDE
