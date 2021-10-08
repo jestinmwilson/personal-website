@@ -1,0 +1,84 @@
+/* TABLETS */
+
+@media (max-width: 1024px) {
+    [dir="ltr"] .colMS {
+        margin-left: 0;
+    }
+
+    [dir="ltr"] #user-tools {
+        text-align: left;
+    }
+
+    [dir="ltr"] #changelist .actions label {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    [dir="ltr"] #changelist .actions select {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    [dir="ltr"] .change-list .filtered .results,
+    [dir="ltr"] .change-list .filtered .paginator,
+    [dir="ltr"] .filtered #toolbar,
+    [dir="ltr"] .filtered div.xfull,
+    [dir="ltr"] .filtered .actions {
+        margin-right: 230px;
+        margin-left: 0;
+    }
+
+    [dir="ltr"] .inline-group ul.tools a.add,
+    [dir="ltr"] .inline-group div.add-row a,
+    [dir="ltr"] .inline-group .tabular tr.add-row td a {
+        padding: 8px 26px 8px 10px;
+        background-position: calc(100% - 8px) 9px;
+    }
+
+    [dir="ltr"] .related-widget-wrapper-link + .selector {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    [dir="ltr"] .selector .selector-filter label {
+        margin-right: 8px;
+        margin-left: 0;
+    }
+
+    [dir="ltr"] .object-tools li {
+        float: left;
+    }
+
+    [dir="ltr"] .object-tools li + li {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    [dir="ltr"] .dashboard .module table td a {
+        padding-left: 16px;
+        padding-right: 0;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    [dir="ltr"] .change-list .filtered .results,
+    [dir="ltr"] .change-list .filtered .paginator,
+    [dir="ltr"] .filtered #toolbar,
+    [dir="ltr"] .filtered div.xfull,
+    [dir="ltr"] .filtered .actions {
+        margin-right: 0;
+    }
+
+    [dir="ltr"] .aligned .add-another,
+    [dir="ltr"] .aligned .related-lookup,
+    [dir="ltr"] .aligned .datetimeshortcuts {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    [dir="ltr"] .aligned ul {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,269 @@
+body {
+    direction: ltr;
+}
+
+/* LOGIN */
+
+.login .form-row {
+    float: left;
+}
+
+.login .form-row label {
+    float: left;
+    padding-left: 0;
+    padding-right: 0.5em;
+    text-align: right;
+}
+
+.login .submit-row {
+    clear: both;
+    padding: 1em 9.4em 0 0;
+}
+
+/* GLOBAL */
+
+th {
+    text-align: left;
+}
+
+.module h2, .module caption {
+    text-align: left;
+}
+
+.module ul, .module ol {
+    margin-left: 1.5em;
+    margin-right: 0;
+}
+
+.viewlink, .addlink, .changelink {
+    padding-left: 16px;
+    padding-right: 0;
+    background-position: 100% 1px;
+}
+
+.deletelink {
+    padding-left: 16px;
+    padding-right: 0;
+    background-position: 100% 1px;
+}
+
+.object-tools {
+    float: right;
+}
+
+thead th:first-child,
+tfoot td:first-child {
+    border-right: none;
+}
+
+/* LAYOUT */
+
+#user-tools {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+div.breadcrumbs {
+    text-align: left;
+}
+
+#content-main {
+    float: left;
+}
+
+#content-related {
+    float: right;
+    margin-left: auto;
+    margin-right: -300px;
+}
+
+.colMS {
+    margin-left: 0;
+    margin-right: 300px;
+}
+
+/* SORTABLE TABLES */
+
+table thead th.sorted .sortoptions {
+   float: right;
+}
+
+thead th.sorted .text {
+    padding-right: 42px;
+    padding-left: 0;
+}
+
+/* dashboard styles */
+
+.dashboard .module table td a {
+    padding-left: 16px;
+    padding-right: .6em;
+}
+
+/* changelists styles */
+
+.change-list .filtered table {
+    border-left: 0px none;
+    border-right: none;
+}
+
+#changelist-filter {
+    right: 0;
+    left: auto;
+    border-left: none;
+    border-right: none;
+}
+
+.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+    margin-right: 280px;
+    margin-left: 0;
+}
+
+#changelist-filter li.selected {
+    border-left: 5px solid #eaeaea;
+    padding-left: 10px;
+    margin-left: -15px;
+    border-right: none;
+    padding-right: 10px;
+    margin-right: 0;
+}
+
+.filtered .actions {
+    margin-left: 0;
+    margin-right: 280px;
+}
+
+#changelist table tbody td:first-child, #changelist table tbody th:first-child {
+    border-right: none;
+    border-left: none;
+}
+
+/* FORMS */
+
+.aligned label {
+    padding: 0 0 3px 1em;
+    float: left;
+}
+
+.submit-row {
+    text-align: right
+}
+
+.submit-row p.deletelink-box {
+    float: left;
+}
+
+.submit-row input.default {
+    margin-right: 0;
+}
+
+.vDateField, .vTimeField {
+    margin-right: 2px;
+}
+
+.aligned .form-row input {
+    margin-right: 5px;
+}
+
+form .aligned p.help, form .aligned div.help {
+    clear: left;
+}
+
+form .aligned ul {
+    margin-right: 0;
+    margin-left: 163px;
+}
+
+form ul.inline li {
+    float: left;
+    padding-right: 7px;
+    padding-left: 0;
+}
+
+input[type=submit].default, .submit-row input.default {
+    float: right;
+}
+
+fieldset .fieldBox {
+    float: left;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.errorlist li {
+    background-position: 100% 12px;
+    padding: 0;
+}
+
+.errornote {
+    background-position: 100% 12px;
+    padding: 10px 12px;
+}
+
+/* WIDGETS */
+
+.calendarnav-previous {
+    top: 0;
+    left: 10px;
+    right: auto;
+}
+
+.calendarnav-next {
+    top: 0;
+    right: 10px;
+    left: auto;
+}
+
+.calendar caption, .calendarbox h2 {
+    text-align: center;
+}
+
+.selector {
+    float: left;
+}
+
+.selector .selector-filter {
+    text-align: left;
+}
+
+.inline-deletelink {
+    float: right;
+}
+
+form .form-row p.datetime {
+    overflow: hidden;
+}
+
+.related-widget-wrapper {
+    float: left;
+}
+
+/* MISC */
+
+.inline-related h2, .inline-group h2 {
+    text-align: left
+}
+
+.inline-related h3 span.delete {
+    padding-right: inherit;
+    padding-left: 20px;
+    left: inherit;
+    right: 10px;
+    float:right;
+}
+
+.inline-related h3 span.delete label {
+    margin-left: 2px;
+    margin-right: inherit;
+}
+
+/* IE7 specific bug fixes */
+
+div.colM {
+    position: relative;
+}
+
+.submit-row input {
+    float: right;
+}
